@@ -1,5 +1,14 @@
-// console.log("Smallest number devisible by 1-10 without a remainder:", 1);
-
+//challenge 1
+var smallestNum
+for (var i = 1; i < 11; i++) {
+  for (var j = 10; j > 0; j--) {
+    if (j%i === 0) {
+      smallestNum = j
+    };
+  };
+  console.log("for " + i + " the lowest number is", smallestNum);
+};
+//challenge 2
 var firstNum = 1
 var secondNum = 0
 var thirdNum = 0
@@ -14,7 +23,7 @@ while (firstNum < 500) {
   firstNum = thirdNum
 
 }
-
+// challenge 3
 var sumOfSquares = 0
 for (var i = 0; i < 11; i++) {
   sumOfSquares += i*i
